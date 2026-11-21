@@ -4,7 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Portfolio | Carlos Mercado</title>
+<meta name="description" content="Projects by Carlos Mercado, computer science student at New Mexico State University.">
 <link rel="stylesheet" href="style.css">
+<style>
+  .project {
+    border: 1px solid rgba(128,128,128,.35);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin: 1.25rem 0;
+  }
+  .project h3 { margin-top: 0; }
+  .project ul { padding-left: 1.2rem; }
+  .project .btn { display: inline-block; margin-top: .5rem; }
+</style>
 </head>
 <body>
 <header><nav>
@@ -15,29 +27,23 @@
 </nav></header>
 <main>
   <h1>Portfolio</h1>
-  <p class="role">Projects will be added here as they are completed.</p>
+  <p>A selection of projects I have worked on as a computer science student at New Mexico State University.</p>
 
-  <div class="grid">
-    <article class="card">
-      <div class="thumb">Screenshot coming soon</div>
-      <div class="body">
-        <h3>AI-Powered Reverse Image Search Website</h3>
-        <p>A website that combines a reverse image search API with custom web scraping to trace the earliest known online appearance of a photo. It parses and compares results across multiple sources to help identify an image's original publication source and date.</p>
-        <span class="tags">Personal project &middot; Web scraping &middot; API</span>
-      </div>
-    </article>
-    <article class="card">
-      <div class="thumb">Screenshot coming soon</div>
-      <div class="body">
-        <h3>Virtual Pantry Tracker</h3>
-        <p>A desktop app that helps users track household pantry inventory. I designed and built the front-end interface in HTML/CSS, and users can log, update and monitor pantry items in real time.</p>
-        <span class="tags">Personal project &middot; Desktop app &middot; HTML/CSS</span>
-      </div>
-    </article>
-    <article class="card empty">
-      <div class="body"><h3>More coming soon</h3><p>Space for the next project.</p></div>
-    </article>
-  </div>
+  <article class="project">
+    <h3>NMSU Study Room Rating App</h3>
+    <p>A "Rate My Professors"-style app for finding study spaces on the NMSU campus. Students can browse existing study rooms or add a new location, then leave their own reviews to help others pick the right spot.</p>
+    <ul>
+      <li>Create a new study room location or find an existing one</li>
+      <li>Write and read reviews for each location</li>
+      <li>Filter locations by features such as food, computers, and other amenities</li>
+      <li>Search for rooms by name</li>
+      <li>Interactive map of study locations</li>
+    </ul>
+    <!-- Optional: add a "Built with" line here, e.g. <p><strong>Built with:</strong> ...</p> -->
+    <a class="btn" href="https://github.com/Dstevens15/NMSU-Studyroom-RatingApp" target="_blank" rel="noopener">View on GitHub</a>
+  </article>
+
+  <!-- Bonus: copy the <article class="project"> block above for each project from your other courses. -->
 </main>
 <footer>&copy; 2026 Carlos Mercado</footer>
 </body>
